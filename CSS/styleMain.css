@@ -1,0 +1,586 @@
+/*@font-face {
+font-family: "SFUIDisplay";
+  src: url("/fonts/SF-UI-Display-Regular.ttf");
+  src: local('SFUI'), 
+  url("/fonts/SF-UI-Display-Regular.ttf") format("truetype"), 
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "SFUIDisplay";
+  src: url("/fonts/SF-UI-Display-Light.ttf");
+  src: local('SFUI'), 
+  url("../fonts/SF-UI-Display-Light.ttf") format("truetype"), 
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "SFUIDisplay";
+  src: url("/SF-UI-Display-Thin.ttf");
+  src: local('SFUI'), 
+  url("/fonts/SF-UI-Display-Thin.ttf") format("truetype"), 
+  font-weight: thin;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "SFUIDisplay";
+  src: url("/fonts/SF-UI-Display-Ultralight.ttf");
+  src: local('SFUI'), 
+  url("/fonts/SF-UI-Display-Ultralight.ttf") format("truetype"), 
+  font-weight: ultralight;
+  font-style: normal;
+}
+
+@font-face {
+font-family: "SFUIDisplay";
+  src: url("/fonts/SF-UI-Display-Bold.ttf");
+  src: local('SFUI'), 
+  url("/fonts/SF-UI-Display-Bold.ttf") format("truetype"), 
+  font-weight: bold;
+  font-style: normal;
+}
+*/
+body {
+    font: 22px/30px SFUIDisplay;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    background: #292828;
+}
+
+#main {
+    width: 1280px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    border-top: 9px solid #00c2d1;
+    height: 720px;
+    position: relative;
+}
+
+#logo {
+    margin: 0 170px;
+    position: absolute;
+    z-index: 1;
+}
+
+#logo img {
+    width: 940px;
+    height: 266px;
+}
+
+#navigate nav {
+    left: 171px;
+    top: 32px;
+    display: block;    
+    position: absolute;
+    z-index: 3;
+}
+
+#navigate nav ul li {
+    float: left;
+    display: block;
+    margin: 0 10px;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+#navigate ul li a {
+    color: #00c2d1;
+}
+
+#tel {
+    right: 171px;
+    top: 32px;
+    position: absolute;
+    z-index: 2;
+}
+
+#tel span {
+    font-size: 18px;
+    line-height: 45px;
+    color: #00c2d1;
+}
+
+#langs{
+    top: 42px;
+    right: 357px;
+    position: absolute;
+    z-index: 4;
+}
+
+#langs ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+#langs img {
+    width: 24px;
+    height: 24px;
+}
+
+#header-info {
+    top: 311px;
+    width: 100%;
+    position: absolute;
+}
+
+#header-info h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: Thin;
+}
+
+#header-info ul {
+    margin: 90px 0 0 170px;
+    width: 100%;
+}
+
+#header-info ul li {
+    margin: 0 15px;
+    float: left;    
+    width: 215px;
+    height: 127px;
+    display: block;
+}
+
+#header-info ul li strong {
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+#header-info p {
+    margin-top: 6px;
+    line-height: 34px;
+    font-weight: lighter;
+}
+
+/* Clinic */
+
+#clinic {
+    background: #00c2d1;
+    height: 1340px;
+    position: relative;
+}
+
+#clinic-bg {
+    background: url(/img/Clinic/clinic-bg.png);
+    height: 1320px;
+    width: 100%;
+    position: absolute;
+    margin: 10px 0;
+}
+
+#clinic-rectangle-with-text {
+    background: url(/img/Clinic/rectangle-with-text.png);
+    position: absolute;
+    height: 330px;
+    width: 670px;
+    margin: 490px 310px 500px 300px;
+}
+
+#clinic-text-area {
+    height: 170px;
+    width: 535px;
+    margin: 75px auto auto auto;
+    
+}
+
+#clinic-text-area p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+}
+
+#clinic-text {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+#clinic-text-header {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+
+#clinic-text-header span {
+    color: #00c2d1;
+}
+
+/*Bio*/
+#name-n-career-info {
+    height: 530px;
+}
+
+#name-n-career {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#name {
+    font-size: 74px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+#name span{
+    color: #00c2d1;
+}
+
+#career {
+    font-size: 45px;
+    line-height: 60px;
+}
+
+#career-img {
+    margin-top: 96px;
+}
+
+#full-info-panel {
+    height: 1840px;
+    background: #00c2d1;
+}
+
+#photo-dmitry { 
+    margin-top: 10px;
+}
+
+/* Primcip*/
+#princip {
+    border-top: 10px solid #00c2d1;
+    height: 1240px;
+    position: relative;
+}
+
+#princip-bg {
+    margin-top: -9px;
+    background: url(/img/Princip/princip-colums.png);
+    height: 1238px;
+}
+
+#button-cirlce {
+    width: 100%; 
+}
+
+#full-info-button {
+    margin-top: -75px;
+    height: 85px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: #00c2d1;
+    border-radius: 0 0 75px 75px;
+    transition: 0.1s;
+}
+
+#full-info-button:hover {
+    box-shadow: 10px 10px 30px 1px rgba(0, 194, 209, 0.56);
+}
+
+#full-info-button p {
+    font-size: 14px;
+    color: white;
+    padding-top: 19px;
+    text-align: center;
+}
+
+#princip-info {
+    top: 177px;
+    position: absolute;
+    width: 100%;
+}
+
+.page-header {
+    line-height: 74px;
+    text-transform: uppercase;
+    font-size: 74px;
+    text-align: center;
+}
+
+.page-header span {
+    color: #00c2d1;
+}
+
+#princip-info dl {
+    line-height: 60px;
+}
+
+#princip-info dl {
+    margin: 65px auto;
+    width: 595px;
+}
+
+#princip-info dl dd {
+    line-height: 36px;
+}
+
+#princip-info dl p {
+    margin-top: 26px;
+    line-height: 34px;
+    color: #ff657e;
+}
+
+/* Price */
+#price {
+    height: 1160px;
+    position: relative;
+}
+
+#price-page {
+    margin-top: 170px;
+    width: 100%;
+}
+
+#price-info {
+    margin: 70px auto;
+    margin-bottom: 0;
+    width: 950px;
+    
+}
+
+#price-info ul {
+    text-align: center;
+}
+
+#price-info ul li{
+    float: left;
+    margin: 0 30px;
+}
+
+#price-info ul li span {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+#price-info ul li p {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+#price-price-n-sale-info {
+    height: 320px;
+    width: 850px;
+    clear: left;
+    position: absolute;
+    margin-top: 170px;
+}
+
+#price-price-n-sale-info table {
+    float: left;
+}
+
+#price-price-n-sale-info table td {
+    font-size: 22px;
+    line-height: 45px;
+    padding-right: 34px;
+}
+
+#price-price-n-sale-info table td span {
+    color: #ff657e;
+    text-decoration: underline;
+}
+
+#price-price-n-sale-info img {
+    float: right;
+}
+
+.cost {
+    font-family: HelveticaNeueCyr, Circe;
+    font-weight: bold;
+}
+
+#telephone {
+    margin-top: 720px;
+    position: absolute;
+    width: 950px;
+}
+
+#telephone p {
+    text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+}
+
+#telephone p span {
+    color: #00c2d1;
+}
+
+/* Feedback */ 
+#feedback {
+    height: 1506px;
+    background: #00c2d1;
+    position: relative;
+}
+
+#feedback-panel {
+    position: absolute;
+    margin: 10px 0;
+    width: 100%;
+}
+
+#feedback-player {
+    background-color: black;
+    height: 720px;
+}
+
+#feedback-photos ul li {
+    float: left;
+}
+
+#adress {
+    margin-top: 190px;
+    height: 580px;
+    background-color: bisque;
+}
+
+/*  contacts */
+#contacts {
+    background: url("/img/contactsNFooter/footer-bg.png");
+    height: 654px;
+    position: relative;
+}
+
+#contacts-header {
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+}
+
+#contacts-header p {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+#contacts-info {
+    position: absolute;
+    margin: 222px 168px 0 168px;
+    height: 233px;
+    width: 944px;
+}
+
+#contacts-info ul {
+    position: absolute;
+    width: 100%;
+    margin: 0 -10px;
+}
+
+#contacts-info ul li {
+    width: 290px;
+    float: left;
+    margin: 0 10px;
+}
+
+#contacts-info ul li strong{
+    color: white;
+}
+
+#contacts-info ul li p {
+    color: white;
+    line-height: 40px;
+}
+
+#contacts-mail {
+    position: absolute;
+    margin-top: 184px;
+    color: white;
+}
+
+#contacts-mail span{
+    font-size: 45px;
+    color: #ff657e;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+#footer {
+    height: 77px;
+    width: 940px;
+    position: absolute;
+    margin: 470px 170px 0 170px;
+}
+
+hr {
+    border-color: #484848;
+}
+
+#contact-data {
+    width: 220px;
+    position: absolute;
+}
+
+#contact-data-name {
+    text-transform: uppercase;
+    color: white;
+}
+
+#contact-data-name span {
+    color: #00c2d1;
+}
+
+#contact-data div {
+    margin-top: 10px;
+}
+
+#contact-data div p {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#shedule {
+    margin-left: 260px; 
+    position: absolute;
+}
+
+#shedule-time {
+    color: white;
+    font-size: 14px;
+}
+
+#shedule div {
+    margin-top: 10px;
+}
+
+#shedule div p {
+    font-size: 13px;
+    color: white;
+    line-height: 20px;
+}
+
+#company {
+    position: absolute;
+    margin-left: 727px;
+    width: 197px;
+}
+
+#company div p {
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+}
+
+#company div span {
+    text-decoration: underline;
+}
+
+#company-img {
+    margin-top: 10px;
+}
+
+/*Bio panel hider */
+#full-info-panel {
+    display: none;
+}
